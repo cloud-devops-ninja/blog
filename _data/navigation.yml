@@ -1,0 +1,14 @@
+- name: Home
+  link: /
+#- name: Blog
+#  link: /blog/
+- name: Members
+  link: /members/
+- name: Events
+  link: /events/
+- name: Presentations
+  link: /presentations/
+- name: Categories
+  link: /categories/
+- name: About
+  link: /about/

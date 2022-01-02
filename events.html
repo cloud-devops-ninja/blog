@@ -1,0 +1,31 @@
+---
+layout: default
+title: Events
+permalink: /events/
+---
+
+<!-- Posts Index
+================================================== -->
+{% if paginator.previous_page %}
+    {% if paginator.previous_page > 0 %}
+        <div id="jumptopageof"></div>
+    {% endif %}
+{% endif %}    
+
+<section class="recent-posts row">
+    <div class="col-sm-8">
+        <div class="masonrygrid row listrecent">
+            {% for post in site.posts %}
+                {% if post.categories contains "events" %}
+                    {% if post.hidden == false %}
+                        {% include eventbox.html %}
+                    {% endif %}
+                {% endif %}
+            {% endfor %}
+        </div> 
+
+    </div>
+    <div class="col-sm-4">
+            {% include sidebar.html %}
+    </div>
+</section>
