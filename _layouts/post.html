@@ -1,0 +1,130 @@
+---
+layout: default
+---
+<div class="row">
+  <div class="col-sm-8">
+    <section>
+      <div class="section-title">
+        <!--small>{{ page.date | date: "%B %-d, %Y" }} | by {{ site.authors[page.author].display_name | default: site.author }}</small-->
+        <h1>{{ page.title }}</h1>
+        <p>
+          <small>{{ page.date | date: "%B %-d, %Y" }}</small>
+          <small>
+              {% if page.authors %}
+              {% for page_author in page.authors %}
+              {% assign author = site.authors[page_author] %}
+                  <a href="{{site.baseurl}}/members/{{author.page}}" title="{{author.display_name}}">
+                      <img src="{{site.baseurl}}/{{author.picture}}"  class="post-author-image"></img>
+                  </a>
+              {% endfor %}
+              {% endif %}
+              </span>
+
+              <span style="float: right">
+              {% if page.reviewers %}
+              {% for page_reviewer in page.reviewers %}
+              {% assign reviewer = site.authors[page_reviewer] %}
+                  <a href="{{site.baseurl}}/members/{{reviewer.page}}" title="{{reviewer.display_name}}">
+                      <img src="{{site.baseurl}}/{{reviewer.picture}}" class="post-author-image"></img>
+                  </a>
+              {% endfor %}
+              {% endif %}
+              </span>
+
+              {% if page.last_modified_at %}
+              (Updated: <time datetime="{{ page.last_modified_at | date_to_xmlschema }}" itemprop="dateModified">{{ page.last_modified_at | date: "%b %-d, %Y" }}</time>)
+              {% endif %}
+          </small>
+        </p>
+        <!--p class="view">by {{ page.author | default: site.author }}</p-->
+      </div>
+
+      <div class="article-post">
+        <!-- Post Featured Image -->
+        {% if page.image %}<img class="featured-image img-fluid" style="width:100%" src="{{ site.baseurl }}/{{ page.image }}" alt="{{ page.title }}">{% endif %}
+        <!-- End Featured Image -->
+        <h3>Table of Content</h3>
+        {% include toc.html html=content %}
+
+        {{content}}
+
+        {% if page.tags %}
+        <small>tags: <em>{{ page.tags | join: "</em> - <em>" }}</em></small>
+        {% endif %}
+
+      </div>
+
+      {% if page.comments == true %}
+
+      <div id="comments" class="row mb-5">
+        <div class="col-md-8">
+          {% include disqus.html %}
+        </div>
+      </div>
+      {% endif %}
+    </section>
+
+<!-- Author Box -->
+{% if page.authors %}
+{% for page_author in page.authors %}
+{% assign author = site.authors[page_author] %}
+
+<div class="row post-top-meta">
+  <div class="author-box">
+
+    <!-- image -->
+    <div class="author-box-picture">
+      <img class="author-box-picture-image" src="{{ site.baseurl }}/{{ author.picture }}"
+        alt="{{ author.display_name }}">
+    </div>
+
+    <!-- name -->
+    <div class="author-box-name">
+      {{ author.display_name }}
+    </div>
+
+    <!-- description -->
+    <div class="author-box-description">
+      {{ author.description }}
+    </div>
+
+    <div class="author-box-clearfix"> </div>
+
+    <div class="author-box-socials">
+      {% if author.linkedin %}
+      <a href="{{author.linkedin}}" target="_blank"><img class="author-box-socials-icon"
+          src="{{ site.baseurl }}/assets/images/socialmedia/linkedin.png" alt="linkedin"></a>
+      {% endif %}
+
+      {% if author.twitter %}
+      <a href="{{author.twitter}}" target="_blank"><img class="author-box-socials-icon"
+          src="{{ site.baseurl }}/assets/images/socialmedia/twitter.png" alt="twitter"></a>
+      {% endif %}
+
+      {% if author.web %}
+      <a href="{{author.web}}" target="_blank"><img class="author-box-socials-icon"
+          src="{{ site.baseurl }}/assets/images/socialmedia/html-5.png" alt="website"></a>
+      {% endif %}
+
+      {% if author.github %}
+      <a href="{{author.github}}" target="_blank"><img class="author-box-socials-icon"
+          src="{{ site.baseurl }}/assets/images/socialmedia/github-white.png" alt="github"></a>
+      {% endif %}
+
+      {% if author.reddit %}
+      <a href="{{author.reddit}}" target="_blank"><img class="author-box-socials-icon"
+          src="{{ site.baseurl }}/assets/images/socialmedia/reddit.png" alt="reddit"></a>
+      {% endif %}
+    </div>
+  </div>
+</div>
+{% endfor %}
+{% endif %}
+
+  </div>
+
+  
+  <!-- Sidebar -->
+  <div class="col-sm-4">
+    {% include sidebar.html %}
+  </div>
