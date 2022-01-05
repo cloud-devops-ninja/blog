@@ -15,11 +15,10 @@ permalink: /events/
 <section class="recent-posts row">
     <div class="col-sm-8">
         <div class="masonrygrid row listrecent">
-            {% for post in site.posts %}
-                {% if post.categories contains "events" %}
-                    {% if post.hidden == false %}
-                        {% include eventbox.html %}
-                    {% endif %}
+            {% assign events = site.categories.events | sort: "eventdate" | reverse %}
+            {% for post in events %}
+                {% if post.hidden == false %}
+                    {% include eventbox.html %}
                 {% endif %}
             {% endfor %}
         </div> 
