@@ -5,7 +5,7 @@ title:  "Scottish Summit 2022"
 location: "Glasgow, UK"
 image: assets/images/events/2022-scottishsummit-glasgow.png
 eventdate: 2022-06-03
-site: 'https://scottishsummit.com//'
+site: 'https://scottishsummit.com/'
 tags: [Bicep,event,presenting]
 hidden: false
 toc: false
