@@ -8,6 +8,7 @@ eventdate: 2022-02-25
 site: 'https://scottishsummit.com//'
 tags: [Bicep,event,presenting]
 hidden: false
+toc: false
 ---
 Scottish Summit is back and bigger than ever.
 It’s the fourth year of this widely renowned Microsoft Community event – and it certainly will not disappoint!

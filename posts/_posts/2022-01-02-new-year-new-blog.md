@@ -6,6 +6,7 @@ authors: [cdo-ninja]
 image: assets/images/posts/happy-new-year-banner-with-glitters.jpg
 tags: [blog]
 hidden: false
+toc: false
 ---
 
 ## Starting 2022 with a blog
