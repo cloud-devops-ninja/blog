@@ -4,7 +4,7 @@ presenters: [esther]
 title:  "Scottish Summit 2022"
 location: "Glasgow, UK"
 image: assets/images/events/2022-scottishsummit-glasgow.png
-eventdate: 2022-02-25
+eventdate: 2022-06-03
 site: 'https://scottishsummit.com//'
 tags: [Bicep,event,presenting]
 hidden: false
