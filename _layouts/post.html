@@ -43,8 +43,10 @@ layout: default
         <!-- Post Featured Image -->
         {% if page.image %}<img class="featured-image img-fluid" style="width:100%" src="{{ site.baseurl }}/{{ page.image }}" alt="{{ page.title }}">{% endif %}
         <!-- End Featured Image -->
-        <h3>Table of Content</h3>
-        {% include toc.html html=content %}
+        {% if page.toc == true %}
+          <h3>Table of Content</h3>
+          {% include toc.html html=content %}
+        {% endif %}
 
         {{content}}
 
