@@ -8,6 +8,12 @@ On this page you can find a collection of recordings of presentations from our {
 
 &nbsp;
 
+### August 2022 Amsterdam Ruby meetip: On hosting and hobby projects &nbsp;&nbsp;&nbsp;(<small>August 16th, 2022</small>)
+
+{% include youtube.html id="Sqqb2fG74Rw" %}
+presenters: [Esther Barthel]({{ site.baseurl }}/members/esther-barthel){:target="_blank"}
+&nbsp;
+
 ### 2021 Festive Tech Calendar &nbsp;&nbsp;&nbsp;(<small>December 16th, 2021</small>)
 
 {% include youtube.html id="NmVbq6xLAuc" %}

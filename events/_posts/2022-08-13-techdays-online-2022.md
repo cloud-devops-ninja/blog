@@ -1,7 +1,7 @@
 ---
 layout: event
 presenters: [esther]
-title:  "techDays: Putting the \"Ops\" into DevOps"
+title:  "TechDays: Putting the \"Ops\" into DevOps"
 location: "Online, Global"
 image: assets/images/events/2022-TechDays-Virtual.png
 eventdate: 2022-09-20
