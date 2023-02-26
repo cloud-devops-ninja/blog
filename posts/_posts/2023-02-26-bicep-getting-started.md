@@ -1,7 +1,7 @@
 ---
 layout: post
 title:  "Bicep: a more intuative way to deploy Azure resources"
-date:   2023-02-26 12:00:00 +0100
+date:   2023-02-25 12:00:00 +0100
 authors: [cdo-ninja]
 image: assets/images/posts/bicep-logo-730x250.png
 tags: [blog]
