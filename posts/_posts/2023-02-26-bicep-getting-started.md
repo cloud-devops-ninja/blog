@@ -60,7 +60,9 @@ To get started with Bicep, you'll need to install the Bicep CLI. The CLI is avai
 
 Once you have the Bicep CLI installed, you can create a new Bicep file using your favorite text editor or IDE. 
 
-*Note: I personally recommend using VS Code, combined with the [Bicep Extension for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep), as your code editor to use the extension supporting features, like scaffolding, snippets and linter to make create your first .bicep file a breeze!*
+*Note: I personally recommend using VS Code, combined with the [Bicep Extension for VS Code](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-bicep){:target="_blank"}, as your code editor to use the extension supporting features, like scaffolding, snippets and linter to make create your first .bicep file a breeze!*
+&nbsp;
+&nbsp;
 
 You can also use the `bicep new` command to generate a basic Bicep file.
 
