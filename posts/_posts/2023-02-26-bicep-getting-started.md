@@ -12,20 +12,23 @@ toc: false
 # Bicep: a more intuitive way to deploy Azure resources
 
 When it comes to deploying resources on Azure, defining infrastructure can be a complex and time-consuming process. Fortunately, there's a new tool available that simplifies the process and saves time and resources in the process: Bicep. \
- \
+&nbsp;
+&nbsp;
 
 ## What is Bicep?
 Bicep is a domain-specific language (DSL) used to describe and deploy Azure resources. It is a declarative language that provides a simplified way of defining Azure resources in comparison to traditional JSON or YAML templates.
 
 Bicep is open source and is developed and maintained by Microsoft. \
- \
+&nbsp;
+&nbsp;
 
 ## Why use Bicep?
 
 Bicep simplifies the process of deploying Azure resources by allowing users to write more concise code. It also provides a simplified syntax that is easier to read and understand than traditional JSON or YAML templates.
 
 In addition, Bicep provides features like parameterization, reusable modules, and better error messages that make it easier to build and maintain infrastructure. \
- \
+&nbsp;
+&nbsp;
 
 ## How does Bicep work?
 
@@ -48,7 +51,8 @@ resource storageAccount 'Microsoft.Storage/storageAccounts@2021-04-01' = {
 ```
 
 This code creates an Azure storage account using the `Microsoft.Storage/storageAccounts@2021-04-01` resource type. The `param` statements at the top of the file define two parameters that can be passed in when the Bicep file is deployed. \
- \
+&nbsp;
+&nbsp;
 
 ## How to get started with Bicep?
 
