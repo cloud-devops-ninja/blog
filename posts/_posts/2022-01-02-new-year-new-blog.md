@@ -5,7 +5,7 @@ date:   2022-01-02 16:16:00 +0100
 authors: [cdo-ninja]
 image: assets/images/posts/happy-new-year-banner-with-glitters.jpg
 tags: [blog]
-hidden: true
+hidden: false
 toc: false
 ---
 
