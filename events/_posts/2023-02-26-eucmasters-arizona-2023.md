@@ -1,7 +1,7 @@
 ---
 layout: event
 presenters: [esther]
-title:  "EUC Masters Retreat 2022"
+title:  "EUC Masters Retreat 2023"
 location: "Scottsdale, AZ"
 image: assets/images/events/2023-eucmasters-arizona.png
 eventdate: 2023-03-31
