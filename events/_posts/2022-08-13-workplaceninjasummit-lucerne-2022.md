@@ -13,6 +13,7 @@ toc: false
 The goal of the Workplace Ninja Summit 2022 is to bring the crowd of workplace management and security ninjas together to share their knowledge, learn together. This covers topics around management of endpoints with configuration manager and Intune, as well virtual desktops and the complete security stack of Microsoft.
 
 Covered Topics
+
 - Microsoft Endpoint Manager ConfigMgr & Intune
 - Microsoft Security
 - Microsoft Defender
@@ -24,4 +25,5 @@ Covered Topics
 &nbsp;
 
 #### Presenting
+
 [Esther Barthel]({{ site.baseurl }}/members/esther-barthel){:target="_blank"} will present solo on advanced AVD deployment scenarios using Bicep at the Workplace Ninja Summit event.
