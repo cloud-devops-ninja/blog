@@ -8,9 +8,6 @@ tags: [blog]
 hidden: false
 toc: false
 ---
-
-# From Blog Post to Working Agent: Building an Intune CIS Compliance Checker with Azure AI Foundry
-
 ## How Jannik Reinhard's open-source Intune agent became the foundation for an AI-powered CIS benchmark compliance tool
 
 ---
@@ -215,13 +212,54 @@ Here are a few things I want to add:
 
 ## Getting started
 
-The full code is in this repository. You will need:
+The full code can be found in [this](https://github.com/cloud-devops-ninja/FoundryAgents/) repository.  
+You will need:
 
 - An Azure subscription with AI Foundry and a model deployment
 - An Azure AD app registration with `DeviceManagementManagedDevices.Read.All` and `DeviceManagementConfiguration.Read.All` Graph permissions
 - Docker (or the AI Foundry VS Code extension) to build and push the container
 
-Clone the repo, copy `.env.example` to `.env`, fill in your credentials, and run `python main.py` to try it locally. Then build the container and deploy the `agent.yaml` to Foundry to get the full playground experience.
+#### Steps to run the agent locally
+
+1. Clone the repo
+
+`git clone https://github.com/cloud-devops-ninja/FoundryAgents.git`  
+`cd FoundryAgents`
+
+2. Copy `.env.example` to `.env` and fill in your credentials  
+(make sure .env is part of .gitignore and .dockerignore)
+
+`copy .env.example .env`
+
+1. Create a virtual environment
+
+`python -m venv venv`
+
+4. Activate the venv
+
+`venv\Scripts\activate`
+
+5. Upgrade pip and install dependencies
+
+`python -m pip install --upgrade pip`
+`pip install -r requirements.txt`
+
+6. Run the Agent to try it locally.
+
+`python main.py`
+
+
+#### Steps to deploy the agent to Foundry (using the Foundry Toolkit for VS Code extension)
+
+1. Enter `<Ctrl>+<Shift>+P`
+2. Type or select `Microsoft Foundry: Deploy Hosted Agent` to Deploy the Agent to Foundry
+3. Select Default ACR to have Foundry create an Azure Container Registry for the docker image
+4. Check the progress of the deployment in the Output panel
+    1. Setting up container registry...
+    2. Building and pushing container image...
+    3. Creating hosted agent...
+5. When the deployment is finished, the Agent Playground panel will automatically open with the Hosted Agent
+6. Test your agent
 
 ---
 
