@@ -185,6 +185,11 @@ The end result is an agent that:
 - Streams the response back in real time
 - Keeps working across container restarts (entity_id looked up fresh each time)
 
+<video controls width="100%">
+  <source src="assets/videos/posts/FoundryIntuneAgent_v2.mp4" type="video/mp4">
+</video>
+
+
 ---
 
 ## What I learned (with a lot of help from Claude Code)
