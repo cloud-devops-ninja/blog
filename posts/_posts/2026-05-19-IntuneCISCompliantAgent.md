@@ -182,9 +182,9 @@ The end result is an agent that:
 - Streams the response back in real time
 - Keeps working across container restarts (entity_id looked up fresh each time)
 
-<video controls width="100%">
-  <source src="https://www.cloud-devops.ninja/assets/videos/posts/FoundryIntuneAgent_v2.mp4" type="video/mp4">
-</video>
+{% include youtube.html id="6af8Wou7sDY" %}
+demo host: [Esther Barthel]({{ site.baseurl }}/members/esther-barthel){:target="_blank"}
+
 ---
 
 ## What I learned (with a lot of help from Claude Code)
