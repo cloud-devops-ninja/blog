@@ -212,7 +212,7 @@ Here are a few things I want to add:
 
 ## Getting started
 
-The full code can be found in [this](https://github.com/cloud-devops-ninja/FoundryAgents/) repository.  
+The full code can be found in [this](https://github.com/cloud-devops-ninja/Foundry-Intune-CIS-Compliant-Agent) repository.  
 You will need:
 
 - An Azure subscription with AI Foundry and a model deployment
