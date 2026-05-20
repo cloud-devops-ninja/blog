@@ -241,7 +241,7 @@ You will need:
 
 5. Upgrade pip and install dependencies
 
-`python -m pip install --upgrade pip`
+`python -m pip install --upgrade pip`  
 `pip install -r requirements.txt`
 
 6. Run the Agent to try it locally.
