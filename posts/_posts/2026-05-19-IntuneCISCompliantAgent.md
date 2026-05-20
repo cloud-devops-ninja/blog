@@ -223,8 +223,8 @@ You will need:
 
 1. Clone the repo
 
-`git clone https://github.com/cloud-devops-ninja/FoundryAgents.git`  
-`cd FoundryAgents`
+`git clone https://github.com/cloud-devops-ninja/Foundry-Intune-CIS-Compliant-Agent.git`  
+`cd Foundry-Intune-CIS-Compliant-Agent`
 
 2. Copy `.env.example` to `.env` and fill in your credentials  
 (make sure .env is part of .gitignore and .dockerignore)
